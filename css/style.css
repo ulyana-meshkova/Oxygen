@@ -29,8 +29,10 @@ body{
     line-height: 75px;
     letter-spacing: -1.65px;
     color: #242121;
+  
     
 }
+
 .text{
     font-family: 'Open Sans';
     font-style: normal;
@@ -38,6 +40,12 @@ body{
     font-size: 14px;
     line-height: 24px;
     color: #373A39;
+}
+.line{
+    width: 60px;
+    height: 4px;
+    background: #FCBB08;
+    margin-left: 0px;
 }
 .logo{
     
@@ -257,14 +265,15 @@ body{
     max-width: 357px;
     
 }
+
+
 .portfolio__column{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
+    
 }
-
-
 
 .portfolio__head{
     display: flex;
@@ -370,17 +379,44 @@ body{
     line-height: 19px;
     color: #00B2A0;;
 }
-.slider{
+.carousel{
     padding-top: 307px;
-    padding-bottom: 114px;;
-    background: #F6F8FA
+    padding-bottom: 325px;
+    
+    background: #F6F8FA;
+}
+.slider{
+    
+}
+.slick-initialized{
+    display: flex;
+    
+}
+.slick-prev{
+    border: none;
+    background: none;
+}
+.slick-next{
+    border: none;
+    background: none;
+}
+.slick-prev:before {
+  content: url("../images/arrow-prev.svg");
+    
+  }
+
+.slick-next:before {
+  content: url("../images/arrow-next.svg");
+  
+  
 }
 .slider__item{
-    width: 100%;
+   
 }
 .slider__text-box{
     max-width: 703px;
     max-height: 208px;
+    padding-left: 60px;
 }
 .slider__item-title{
     font-family: 'Montserrat';
@@ -399,7 +435,7 @@ body{
     line-height: 24px;
     color: #777777;
     max-width: 560px;
-    margin-bottom: 197px;
+    
 }
 
 .slick-dots{
