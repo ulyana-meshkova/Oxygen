@@ -10,13 +10,13 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
+    padding: 0 10px;
     justify-content: space-between;
 }
 
 .container{
    max-width: 1170px;
    margin: 0 auto;
-   /*background-color: blue;*/
    padding: 0 10px;
    
 }
@@ -41,15 +41,18 @@ body{
     line-height: 24px;
     color: #373A39;
 }
+
 .line{
     width: 60px;
     height: 4px;
     background: #FCBB08;
     margin-left: 0px;
 }
+
 .logo{
     
 }
+
 
 .header__top-inner{
     display: flex;
@@ -60,6 +63,8 @@ body{
     height: 42px;
     margin: 26px auto 26px 52px;
 }
+
+
 .menu__list{
     display: flex;
     margin-right: 53px;
@@ -92,6 +97,8 @@ body{
    
     
 }
+
+
 .header__content{
     background-image: url(../images/hd-bg.jpg);
     height: 100vh;
@@ -115,7 +122,6 @@ body{
     line-height: 122px;
     color: #FFFFFF;   
 }
-
 .header__content-description{
     font-family: 'Montserrat';
     font-style: normal;
@@ -129,7 +135,7 @@ body{
     
 }
 
-/*ALL GOOD*/
+
 .about{
     background-color: #F6F8FA;
 }
@@ -138,18 +144,17 @@ body{
     padding-top: 143px;
     padding-bottom: 159px;
     justify-content: space-between;
-    
-}
+ }
 .about__title{
     
 }
 .about__text{
     max-width: 770px;
-    height: 180px;
+    min-height: 180px;
    
 }
 
-/*in progress*/
+
 .expertise__inner{
     padding-top: 143px;
     padding-bottom: 164px;
@@ -165,7 +170,6 @@ body{
 .expertise__number-items{
     
 }
-
 .expertise__number-item{
    font-family: 'Open Sans';
     font-style: normal;
@@ -177,24 +181,19 @@ body{
     font-variant: small-caps;
     margin-bottom: 28px;
 }
-
-
-
 .expertise__number-text{
     margin-left: 30px;
     max-width: 770px;
 }
-
-
 .expertise__items{
     display: flex;
 }
 .expertise__item{
-    display: flex; 
+    display: flex;
+    max-width: 370px;
+    min-width: 230px;
     
 }
-
-/*to all except the first one*/
 .expertise__item+.expertise__item{
     margin-left: 28px;
 }
@@ -202,8 +201,6 @@ body{
     width: 50px;
     height: 50px;
 }
-
-
 .expertise__item-box{
     margin-left: 37px;
 }
@@ -218,7 +215,6 @@ body{
     color: #333333;
         
 }
-
 .expertise__item-text{
     background-color:  color: #777777;
 }
@@ -226,10 +222,7 @@ body{
 
 .magic{
     background: #F6F8FA;
-   
-    
-}
-
+  }
 .magic__img{
     max-width: 705px;
     max-height: 840px;
@@ -242,7 +235,6 @@ body{
     padding-top: 101px;
     
 }  
-
 .magic__title{
     margin-bottom: 67px;
     flex-wrap: wrap;
@@ -250,6 +242,8 @@ body{
 .magic__text{
     
 }
+
+
 .portfolio__wrapper{
     max-width: 1440px;
     max-height: 912px;
@@ -265,8 +259,6 @@ body{
     max-width: 357px;
     
 }
-
-
 .portfolio__column{
     display: flex;
     flex-direction: column;
@@ -274,7 +266,6 @@ body{
     
     
 }
-
 .portfolio__head{
     display: flex;
     justify-content: space-between;
@@ -307,7 +298,6 @@ body{
     margin-left: 38px;
     
 }
-
 .portfolio__btn{
     border: none;
     width: 100%;
@@ -323,6 +313,8 @@ body{
     color: #242121;
         
 }
+
+
 .quote__inner{
     padding-top: 130px;
     padding-bottom: 148px;
@@ -354,6 +346,8 @@ body{
 .video__content{
  
 }
+
+
 .statistics__inner{
     display: flex;
     justify-content: space-around;
@@ -404,7 +398,6 @@ body{
   content: url("../images/arrow-prev.svg");
     
   }
-
 .slick-next:before {
   content: url("../images/arrow-next.svg");
   
@@ -438,17 +431,10 @@ body{
     
 }
 
-.slick-dots{
-    list-style: none;
-    display: flex;
-    
-}
 
 .team__items{
     display: flex;
 }
-
-
 .team__inner{
     padding-top: 120px;
     padding-bottom: 164px;
@@ -462,8 +448,8 @@ body{
 }
 .team__item-img{
     margin-bottom: 35px;
-    width: 370px;
-    height: 440px;
+    max-width: 100%;
+    max-height: 100%;
 }
 .team__item-name{
     font-family: 'Montserrat';
@@ -484,11 +470,11 @@ body{
     text-align: center;
     color: #C2C2C2;
 }
+
+
 .pricing__items{
     display: flex;
 }
-
-
 .pricing{
     background-color: #F6F8FA;
 }
@@ -555,24 +541,24 @@ body{
 
 
 .contact__inner{
-    padding-top: 307px;
-    margin-left: 136px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  padding-top: 145px;
+  justify-content: space-between;
+    
     
 }
 .contact__content{
-
+   margin-right: 91px;
     
 }
 .contact__title{
-    margin-top: 145px;
     margin-bottom: 94px;
+   
     
 }
 .contact__form{
-    width: 569px;
-    height: 317px;
+    max-width: 569px;
+    
     
 }
 .contact__form-input{
@@ -608,8 +594,8 @@ body{
     font-variant: small-caps;
 }
 .contact__map-img{
-    max-width: 635pcx;
-    padding-top: 292px;
+   max-width: 100%;
+   
 }
 .contact__form-input{
     display: block;
@@ -632,6 +618,8 @@ body{
     letter-spacing: 2px;
     color: #fff;
     font-variant:small-caps;
+    margin-bottom: 50px;
+    
 }
 .footer{
   
@@ -641,6 +629,10 @@ body{
     padding-top: 110px;
     padding-bottom: 126px;
     text-align: center;
+}
+.logo__footer{
+    margin: 0;
+    
 }
 .logo--line{
     margin-bottom: 73px;
@@ -688,4 +680,4 @@ body{
     text-align: center;
     color: #CCCCCC;
     
-}
+} */

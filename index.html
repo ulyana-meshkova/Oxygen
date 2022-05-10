@@ -25,12 +25,16 @@
                            </a>
                        </div> 
                        <nav class="menu">
+                         <div class="menu__btn">
+                             <span></span>
+                         </div>
+                          
                            <ul class="menu__list">
                                <li class="menu__list-item">
                                    <a class="menu__link" href="#about-us" title="about us">about us</a>
                                </li>
                                <li class="menu__list-item">
-                                   <a class="menu__link menu__link--active" href="#portfolio" title="portfolio">portfolio</a>
+                                   <a class="menu__link" href="#portfolio" title="portfolio">portfolio</a>
                                </li>
                                <li class="menu__list-item">
                                    <a class="menu__link menu__link--active" href="#team" title="our team">our team</a>
@@ -70,7 +74,7 @@
                    </div>
                </div>
            </div>
-    </section>
+    </section> 
     <section class="expertise">
            <div class="container">
                <div class="expertise__inner">
@@ -81,8 +85,10 @@
                    <div class="expertise__content">
                         <div class="expertise__numbers">
                              <div class="expertise__number-items">
+                                 
+                                 
                                   <div class="expertise__number-item">branding</div>
-                                  <!--цифру через дата атрибут-->
+                                  
                                   <div class="expertise__number-item">design</div>
                                   <div class="expertise__number-item">development</div>
                                </div>
@@ -90,7 +96,8 @@
                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi.</p><br>
                                    <p>Autem laborum sint tenetur, earum facere veniam? Sunt fugiat veniam consectetur soluta quia ex tempora quaerat, perferendis! Itaque a praesentium saepe ex distinctio aliquid quis</p>
                                </div>
-                       </div>    
+                       </div>  
+                            
                            
                        <div class="expertise__items">
                                <div class="expertise__item">
@@ -140,10 +147,11 @@
               </div>
              
       </div>
-   </section>
+       </section>
     <section class="portfolio">
          
                <div class="container">
+                  <div class="portfolio__inner">
                    <div class="portfolio__head" id="portfolio">
                        <div class="title portfolio__title">Portfolio <div class="line"></div></div>
                         <nav class="portfolio__menu">
@@ -166,6 +174,7 @@
                                    </ul>
                         </nav>
                         </div>
+                    </div>    
             </div> 
             
             <div class="portfolio__wrapper">
@@ -198,7 +207,7 @@
            
         </div>
         <button class="portfolio__btn">VIEW MORE PROJECTS</button>
-   </section>
+       </section>
     <section class="quote">
        <div class="container">
            <div class="quote__inner">
@@ -206,14 +215,12 @@
                 <div class="quote__author">Gilbert Hammond</div>
             </div>
         </div>
-   </section>
+       </section>
     <section class="video">
       <div class="container">
            <iframe class="video__content" width="100%" height="315" src="https://www.youtube.com/embed/0lJm8ENELrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <!-- <iframe width="50%" height="315" src="https://www.youtube.com/embed/elYL6z1_eFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-           <iframe width="50%" height="315" src="https://www.youtube.com/embed/DppVAQqaNE4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+    
+         
       </div> 
      </section>
     <section class="statistics">
@@ -366,23 +373,25 @@
         </div>
     </section>
     <section class="contact">
-       <div class="wrapper">
+       <div class="container">
        
-               <div class="contact__inner" id="contact">
-               <div class="contact__content">
-               <div class="title contact__title">Get in Touch <div class="line"></div></div>
-               <form class="contact__form" action="#" method="post">
-                  <input class="contact__form-input contact__form-text" name="name" type="text"  placeholder="your name" required>
-                  <input class="contact__form-input contact__form-text" name="email" type="email"  placeholder="valid email" required>
-                   <textarea class="contact__form-textarea contact__form-text" name="message" type="text" placeholder="your message" required></textarea>
-                   <button class="contact__btn" type="submit">send message</button>
-               </form>
-               
-               </div>
+            <div class="contact__inner" id="contact">
+                   <div class="contact__content">
+                       <div class="title contact__title">Get in Touch <div class="line"></div></div>
+                       <form class="contact__form" action="#" method="post">
+                          <input class="contact__form-input contact__form-text" name="name" type="text"  placeholder="your name" required>
+                          <input class="contact__form-input contact__form-text" name="email" type="email"  placeholder="valid email" required>
+                           <textarea class="contact__form-textarea contact__form-text" name="message" type="text" placeholder="your message" required></textarea>
+                           <button class="contact__btn" type="submit">send message</button>
+                       </form>
+
+                   </div>
+                   <img class="contact__map-img" src="./images/contact-img.png" alt="map" >
            </div>
             
         
-        <div class="contact__map"><img class="contact__map-img" src="./images/contact-img.png" alt="map" ></div>
+            
+        
        </div>  
     </section>
     <footer class="footer">
