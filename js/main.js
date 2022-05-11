@@ -11,4 +11,9 @@ $('.slider').slick({
   nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   
         });
+    
+$('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active')
+})  
+    
 });

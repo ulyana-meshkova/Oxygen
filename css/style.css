@@ -49,10 +49,6 @@ body{
     margin-left: 0px;
 }
 
-.logo{
-    
-}
-
 
 .header__top-inner{
     display: flex;
@@ -97,6 +93,46 @@ body{
    
     
 }
+.menu__btn{
+    display: flex;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    align-items: center; 
+    position: relative;
+    margin: 26px 40px 26px auto;
+    display: none;
+      
+        
+}
+.menu__btn span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    
+
+    
+}
+.menu__btn::after,
+.menu__btn::before{
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 2px;
+    background-color: black;
+}
+.menu__btn::before{
+    top: 0;
+    
+}
+.menu__btn::after{
+    bottom: 0;
+    
+}
+
 
 
 .header__content{
@@ -296,6 +332,46 @@ body{
 }
 .portfolio__menu-item+.portfolio__menu-item{
     margin-left: 38px;
+    
+}
+.portfolio__menu-btn{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center; 
+    position: relative;
+    
+    display: none;
+    vertical-align: top;
+      
+        
+}
+.portfolio__menu-btn span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    
+
+    
+}
+.portfolio__menu-btn::after,
+.portfolio__menu-btn::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+.portfolio__menu-btn::before{
+    top: 0;
+    
+}
+.portfolio__menu-btn::after{
+    bottom: 0;
     
 }
 .portfolio__btn{
@@ -549,6 +625,7 @@ body{
 }
 .contact__content{
    margin-right: 91px;
+   max-width: 100%;
     
 }
 .contact__title{
@@ -621,6 +698,8 @@ body{
     margin-bottom: 50px;
     
 }
+
+
 .footer{
   
 }
@@ -646,7 +725,6 @@ body{
     margin-bottom: 65px;
     justify-content: center;
 }
-
 .footer__list-link{
     text-decoration: none;
     font-variant: small-caps;

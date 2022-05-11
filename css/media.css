@@ -80,11 +80,14 @@
     .pricing__btn{
         margin-left: 50px;
     }
-    .text-picture{
-        flex-wrap: wrap;
+     .contact__content{
+        max-width: 100%;
+    }
+    .contact__map-img{
+        
     }
     .magic__img{
-        width: 420px;
+        max-width: 420px;
         height: 595px;
     }
   
@@ -133,7 +136,6 @@
     
 
 }
-
 @media (max-width: 992px){
     .portfolio__title{
         margin-right: 25px;
@@ -141,12 +143,8 @@
     .portfolio__head{
         flex-wrap: wrap;
     }
-    .text-picture{
-        
-    }
-    
+       
 }
-
 @media (max-width: 860px){
     .expertise__title{
     margin-bottom: 25px;
@@ -181,20 +179,55 @@
     }
    
 }
-
 @media (max-width: 768px){
+    .menu__btn{
+        display: flex;
+    }
     .menu__list{
-        display: none;
-        background-position: center bottom;
-    }
-    .header__content{
-    max-height: 500px;
-    }
-    .header__content-title{
-    font-size: 100px;
+        display: flex;
+        position: absolute;
+        background-color: #FCBB08;
+        opacity: 0.5;
+        z-index: 1;
+        writing-mode: vertical-rl;
+        justify-content:space-evenly;
+        margin: 0 auto;
+        transform: translateY(-200%);
+        transition: all 0.5s;
         
     }
- 
+    .menu__list.menu__list--active{
+        transform: translateY(0);
+        
+     }
+    .menu__list-item{
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+        padding-left: 18px;
+        width: 42px;
+        font-size: 18px;
+        margin-top: 30px;
+        
+    }
+    .menu__list-item:last-child{
+        margin-bottom: 20px;
+    }
+    .menu__link:hover{
+        text-decoration: none;
+    
+    }
+    .header__content{
+        max-height: 500px;
+    }
+    .header__content-title{
+        font-size: 100px;
+        
+    }
+   .portfolio__menu-btn{
+        display: flex;
+        margin-bottom: auto;
+    }
     .portfolio__column:nth-of-type(2){
        display: none;
     }
@@ -228,9 +261,10 @@
     
     
 }
-
-
 @media (max-width: 524px){
+    .menu__btn{
+        margin: 26px 20px 26px auto;;
+    }
     .title{
         font-size: 45px;
     }
@@ -273,7 +307,6 @@
   
         
 }
-
 @media (max-width: 450px){
     .header__content-title{
         font-size: 70px;
