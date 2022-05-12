@@ -76,6 +76,7 @@ body{
     line-height: 16px;
     letter-spacing: 0.6px;
     font-variant: small-caps;
+    white-space: nowrap;
     
 }
 .menu__link{
