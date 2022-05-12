@@ -66,26 +66,21 @@
         padding-top: 150px;
         padding-bottom: 150px;
     }
-    .team__items{
-     
-    }
+   
     .team__item{
         margin: 15px 15px 25px 15px;
         
     }
-  .pricing__item-rate{
-      padding-right: 80px;
-      padding-left: 100px;
+    .pricing__items{
+        justify-content: space-around;
     }
-    .pricing__btn{
-        margin-left: 50px;
+     .pricing__item{
+        margin-top: 25px;
     }
      .contact__content{
         max-width: 100%;
     }
-    .contact__map-img{
-        
-    }
+ 
     .magic__img{
         max-width: 420px;
         height: 595px;
@@ -177,6 +172,7 @@
         display: flex;
         flex-wrap: wrap;
     }
+    
    
 }
 @media (max-width: 768px){
@@ -225,7 +221,7 @@
         
     }
    .portfolio__menu-btn{
-        display: flex;
+        display: none;
         margin-bottom: auto;
     }
     .portfolio__column:nth-of-type(2){
@@ -304,8 +300,20 @@
     .logo--line{
         margin-bottom: 30px;
     }
-  
-        
+    .pricing__item-info{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 30px;
+    }
+    .pricing__btn{
+        margin-top: 45px;
+    }
+    .pricing__item{
+        padding-bottom: 25px;
+        padding-left: 0;
+    }
+    
+   
 }
 @media (max-width: 450px){
     .header__content-title{
